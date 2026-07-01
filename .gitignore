@@ -1,3 +1,16 @@
 *.pyc
 *.npy
 *.pth
+
+# Local datasets and generated artifacts.
+data/
+outputs/
+ckpt/
+work_dirs/
+
+# Native/CUDA build outputs.
+build/
+*.so
+*.egg-info/
+projects/mmdet3d_plugin/ops/build/
+projects/mmdet3d_plugin/ops/*.so
