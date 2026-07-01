@@ -42,6 +42,15 @@ python3 tools/nuscenes_converter.py --version v1.0-trainval,v1.0-test --info_pre
 python3 tools/anchor_generator.py --ann_file ${pkl_path}/nuscenes_infos_train.pkl
 ```
 
+### Run inference on custom-format videos
+```bash
+bash tools/run_custom_video_inference_2_86.sh \
+  /path/to/your/custom/video \
+  /path/to/weights.ckpt \
+  --plugin /path/to/decoder_plugin.dll \
+  --param /path/to/decoder_param.yml
+```
+
 ### Download pre-trained weights
 Download the required backbone [pre-trained weights](https://download.pytorch.org/models/resnet50-19c8e357.pth).
 ```bash
